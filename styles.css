@@ -105,15 +105,16 @@ img {
     padding: 0.5em 1em;
 }
 
-.input:focus {
+.input:focus:not(.invalid) {
     border: 1px solid cornflowerblue;
     outline: 1px solid cornflowerblue;
 }
 
 .invalid {
-    border: 2px solid red;
+    border: 1px solid red;
     outline: 0px solid red;
 }
+
 
 .invisible {
     display: none;
