@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div>
+    <div class="row">
         <div class="hero">
             <div class="odin__banner">
                 <div class="hero__img">
@@ -24,9 +24,57 @@
             </div>
         </div>
         <main class="main">
-            <section class=""></section>
-            <section></section>
-            <section></section>
+            <section class="top__section">
+                <div class="container">
+                    <h2>You know you need something like this in your life to help you realize your deepest dreams.</h2>
+                    <h2>Sign Up <em>now</em> to get started.</h2>
+                    <h2>You <em>know</em> you want to.</h2>
+                </div>
+            </section>
+            <section class="middle__section">
+                <div class="container">
+                    <h2 class="form__title">Let's do this!</h2>
+                    <form id="form1" action="http://httpbin.org/post" method="post" class="sign-up__form">
+                        <div class="row form__section">
+                            <div class="form__item">
+                                <label class="input_label" for="name">FIRST NAME</label>
+                                <input class="input" type="text" id="name" name="first-name">
+                            </div>
+                            <div class="form__item">
+                                <label class="input_label" for="last-name">LAST NAME</label>
+                                <input class="input" type="text" id="last-name" name="last-name">
+                            </div>
+                        </div>
+                        <div class="row form__section">
+                            <div class="form__item">
+                                <label class="input_label" for="email">EMAIL</label>
+                                <input class="input" type="email" id="email" name="email">
+                            </div>
+                            <div class="form__item">
+                                <label class="input_label" for="number">PHONE NUMBER</label>
+                                <input class="input" type="text" id="number" name="phone-number">
+                            </div>
+                        </div>
+                        <div class="row form__section">
+                            <div class="form__item">
+                                <label class="input_label" for="password">PASSWORD</label>
+                                <input class="input" type="password" id="password" name="password">
+                            </div>
+                            <div class="form__item">
+                                <label class="input_label" for="password-confirm">CONFIRM PASSWORD</label>
+                                <input class="input" type="password" id="password-confirm" name="password confirm">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="bottom_section container">
+                <div>
+                    <button type="submit" form="form1" value="Create Account" class="create__btn">Create
+                        Account</button>
+                </div>
+                <p>Already have an account? <a class="a__login" href="">Log In</a></p>
+            </section>
         </main>
     </div>
 </body>
