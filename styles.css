@@ -18,7 +18,7 @@ img {
 }
 
 .hero {
-    background-image: url(/images/hero_background_2.jpg);
+    background-image: url(./images/hero_background_2.jpg);
     background-position: center;
     background-size: cover;
     margin: 0;
@@ -108,6 +108,19 @@ img {
 .input:focus {
     border: 1px solid cornflowerblue;
     outline: 1px solid cornflowerblue;
+}
+
+.invalid {
+    border: 2px solid red;
+    outline: 0px solid red;
+}
+
+.invisible {
+    display: none;
+}
+
+.pass_match--fail {
+    color: red;
 }
 
 .bottom_section {
